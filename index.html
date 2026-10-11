@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendercadet</title>
+    <link rel="stylesheet" href="styling.css" />
+    <!-- <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .data-container {
+        margin-top: 20px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1>Welcome to your To do List Journal</h1>
+    <p>
+      Great minds discuss ideas.avearage minds discuss events.Small minds
+      discuss people.<br />
+      We are capable of doing <b>anything</b> we want to do as long as <br />
+      we stick to it long enough".
+    </p>
+
+    <div class="container">
+      <form action="/submit" method="POST">
+        <label for="inputField">Enter Text:</label>
+        <input
+          type="text"
+          id="input"
+          name="inputfield"
+          placeholder="what's next"
+        />
+        <button type="submit">Add</button>
+      </form>
+      <h2>To do List</h2>
+      <div id="dataDisplay" class="data-container">
+        <hr />
+      </div>
+      <!-- Data from JavaScript -->
+      <!-- <script>
+        document
+          .querySelector("form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const inputField = document.getElementById("inputField");
+            const dataDisplay = document.getElementById("dataDisplay");
+
+            // Create a new paragraph element to display the input
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = inputField.value;
+
+            // Append the new paragraph to the data display container
+            dataDisplay.appendChild(newParagraph);
+
+            // Clear the input field
+            inputField.value = "";
+          });
+      </script> -->
+      <script src="logic.js"></script>
+    </div>
+  </body>
+</html>
